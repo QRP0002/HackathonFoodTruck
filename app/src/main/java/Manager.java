@@ -3,10 +3,11 @@ import java.util.ArrayList;
 /**
  * Created by gmbordelon on 2/21/2015.
  */
-public class main {
+public class Manager {
 
     ArrayList<Customer> customerArray = new ArrayList<>();
     ArrayList<Truck> truckArray = new ArrayList<>();
+
 
     public void createCustomer(String name, ArrayList recOrder, double location)
     {
@@ -14,16 +15,18 @@ public class main {
         customerArray.add(tempCustomer);
     }
 
-    public void createTruck(String name, String phoneNum, double location, String userName, String userPassword)
+    public void createTruck(String name, String phoneNum, double Xlocation, double Ylocation, String userName, String userPassword)
     {
-        Truck tempTruck = new Truck(String name, String phoneNum, double location, String userName, String userPassword);
+        Truck tempTruck = new Truck(name, phoneNum, Xlocation, Ylocation, userName, userPassword);
         truckArray.add(tempTruck);
     }
 
-    public void createAdmin(String name, String userName, String userPassword)
+    public void createFood(String name, double salePrice, int quantity, int amtPerCase)
     {
-
+        Food tempFood = new Food(name, salePrice, quantity, amtPerCase);
     }
+
+
 
 
 }

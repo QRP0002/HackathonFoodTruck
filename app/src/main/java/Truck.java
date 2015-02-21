@@ -3,18 +3,20 @@
  *
  * @author Justin Hahn
  */
-public class FoodTruck {
+public class Truck {
     public String truckName;
     public String phoneNumber;
-    public double locationTruck;
+    public double XlocationTruck;
+    public double YlocationTruck;
     public String truckUserName;
     public String truckPassword;
 
     //the constructor for the truck
-    public FoodTruck(String name, String phNum, double location, String userName, String password) {
+    public Truck(String name, String phNum, double Xlocation, double Ylocation, String userName, String password) {
         truckName = name;
         phoneNumber = phNum;
-        locationTruck = location;
+        XlocationTruck = Xlocation;
+        YlocationTruck = Ylocation;
         truckUserName = userName;
         truckPassword = password;
 
@@ -39,11 +41,13 @@ public class FoodTruck {
     }
 
     //the location methods for the truck
-    public void setLocation(double location) {
-        locationTruck = location;
+    public void setLocation(double Xlocation, double Ylocation) {
+        XlocationTruck = Xlocation;
+        YlocationTruck = Ylocation;
     }
 
-    public double getLocation() {
+    public String getLocation() {
+        String locationTruck = Double.toString(XlocationTruck) + Double.toString(YlocationTruck);
         return locationTruck;
     }
 
