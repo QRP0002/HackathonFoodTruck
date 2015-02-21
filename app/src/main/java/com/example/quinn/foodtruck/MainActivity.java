@@ -1,5 +1,6 @@
 package com.example.quinn.foodtruck;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -19,8 +20,29 @@ public class MainActivity extends ActionBarActivity {
         setContentView(R.layout.activity_main);
 
         mAdminButton = (Button)findViewById(R.id.admin_button);
+        mAdminButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, AdminLogin.class);
+                startActivity(intent);
+            }
+        });
         mTruckButton = (Button)findViewById(R.id.truck_button);
+        mTruckButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, TruckLogin.class);
+                startActivity(intent);
+            }
+        });
         mCustomerButton = (Button)findViewById(R.id.customer_button);
+        mCustomerButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Customer.class);
+                startActivity(intent);
+            }
+        });
     }
 
 
@@ -44,20 +66,5 @@ public class MainActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
-    }
-
-    public void adminLogin (View view) {
-        Intent intent = new Intent(this, AdminLogin.class);
-        startActivity(intent);
-    }
-
-    public void truckLogin (View view) {
-        Intent intent = new Intent(this, TruckLogin.class);
-        startActivity(intent);
-    }
-
-    public void customerPage (View view) {
-        Intent intent = new Intent(this, Customer.class);
-        startActivity(intent);
     }
 }

@@ -18,9 +18,23 @@ public class AdminLogin extends ActionBarActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_admin_login);
 
         mLoginButton = (Button)findViewById(R.id.login_button);
+        mLoginButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AdminLogin.this, Admin.class);
+                EditText editText = (EditText)findViewById(R.id.name_admin);
+                EditText editText1 = (EditText) findViewById(R.id.password_admin);
+                String userName = editText.getText().toString().toLowerCase();
+                String password = editText1.getText().toString().toLowerCase();
+                boolean flag = loginTest(userName, password);
+                if (flag == true) {
+                    startActivity(intent);
+                }
+            }
+        });
     }
 
     @Override
@@ -45,12 +59,23 @@ public class AdminLogin extends ActionBarActivity{
         return super.onOptionsItemSelected(item);
     }
 
-    public void login (View view){
-        Intent intent = new Intent(this, Admin.class);
-        EditText editText = (EditText)findViewById(R.id.name_admin);
-        EditText editText1 = (EditText) findViewById(R.id.password_admin);
-        String userName = editText.getText().toString();
-        String password = editText1.getText().toString();
-        startActivity(intent);
+    public boolean loginTest (String userNameIn, String passIn) {
+        String user = "1";
+        String pass = "1";
+        boolean userFlag = false;
+        boolean passFlag = false;
+
+        if (user.equals(userNameIn)) {
+            userFlag = true;
+        }
+
+        if (pass.equals(passIn)) {
+            passFlag = true;
+        }
+
+        if (passFlag == true && userFlag == true) {
+            return true;
+        }
+        return false;
     }
 }

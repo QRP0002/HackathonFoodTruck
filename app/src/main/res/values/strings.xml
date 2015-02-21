@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <string name="action_settings">action_settings</string>
     <string name="app_name">FoodTruck</string>
     <string name="option_text">Pick your option</string>
     <string name="admin_button">Admin</string>
     <string name="truck_button">Truck</string>
     <string name="customer_button">Customer</string>
-    <string name="login_button">Login</string>
-    <string name="name_admin">Username</string>
-    <string name="password_admin">Password</string>
+    <string name="login_admin">Login</string>
+    <string name="login_truck">Login</string>
+    <string name="name_admin"></string>
+    <string name="password_admin"></string>
+    <string name="name_truck"></string>
+    <string name="password_truck"></string>
+    <string name="title_activity_admin_login">AdminLogin</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_truck_login">TruckLogin</string>
+    <string name="title_activity_customer">Customer</string>
 
 </resources>
