@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FoodTruck</string>
+    <string name="option_text">Pick your option</string>
+    <string name="admin_button">Admin</string>
+    <string name="truck_button">Truck</string>
+    <string name="customer_button">Customer</string>
+
+</resources>
