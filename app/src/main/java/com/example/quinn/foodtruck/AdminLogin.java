@@ -1,28 +1,27 @@
 package com.example.quinn.foodtruck;
 
 import android.content.Intent;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 
+/**
+ * Created by Quinn on 2/21/2015.
+ */
+public class AdminLogin extends ActionBarActivity{
+    private Button mLoginButton;
 
-public class MainActivity extends ActionBarActivity {
-    private Button mAdminButton;
-    private Button mTruckButton;
-    private Button mCustomerButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mAdminButton = (Button)findViewById(R.id.admin_button);
-        mTruckButton = (Button)findViewById(R.id.truck_button);
-        mCustomerButton = (Button)findViewById(R.id.customer_button);
+        mLoginButton = (Button)findViewById(R.id.login_button);
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -46,18 +45,12 @@ public class MainActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void adminLogin (View view) {
-        Intent intent = new Intent(this, AdminLogin.class);
-        startActivity(intent);
-    }
-
-    public void truckLogin (View view) {
-        Intent intent = new Intent(this, TruckLogin.class);
-        startActivity(intent);
-    }
-
-    public void customerPage (View view) {
-        Intent intent = new Intent(this, Customer.class);
+    public void login (View view){
+        Intent intent = new Intent(this, Admin.class);
+        EditText editText = (EditText)findViewById(R.id.name_admin);
+        EditText editText1 = (EditText) findViewById(R.id.password_admin);
+        String userName = editText.getText().toString();
+        String password = editText1.getText().toString();
         startActivity(intent);
     }
 }

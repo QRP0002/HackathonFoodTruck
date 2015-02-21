@@ -18,17 +18,21 @@
             android:id="@+id/admin_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/admin_button"/>
+            android:text="@string/admin_button"
+            android:onClick="adminLogin"/>
+
         <Button
             android:id="@+id/truck_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/truck_button"/>
+            android:text="@string/truck_button"
+            android:onClick="truckLogin"/>
         <Button
             android:id="@+id/customer_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/customer_button"/>
+            android:text="@string/customer_button"
+            android:onClick="customerPage"/>
 
     </LinearLayout>
 </LinearLayout>
