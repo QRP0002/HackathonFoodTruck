@@ -10,6 +10,10 @@ import android.widget.Button;
 
 public class Customer extends ActionBarActivity {
     private Button mViewMapButton;
+    private Button mBusOneButton;
+    private Button mBusTwoButton;
+    private Button mBusThreeButton;
+    private Button mBusFourButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +26,38 @@ public class Customer extends ActionBarActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(Customer.this, Map.class);
                 startActivity(intent);
+            }
+        });
+
+        mBusOneButton = (Button)findViewById(R.id.view_map);
+        mBusOneButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        mBusTwoButton = (Button)findViewById(R.id.view_map);
+        mBusTwoButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        mBusThreeButton = (Button)findViewById(R.id.view_map);
+        mBusThreeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        mBusFourButton = (Button)findViewById(R.id.view_map);
+        mBusFourButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
             }
         });
     }
