@@ -20,6 +20,7 @@ public class Customer extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_customer);
 
+
         mViewMapButton = (Button)findViewById(R.id.view_map);
         mViewMapButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -29,6 +30,7 @@ public class Customer extends ActionBarActivity {
             }
         });
 
+
         mBusOneButton = (Button)findViewById(R.id.view_map);
         mBusOneButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -36,6 +38,7 @@ public class Customer extends ActionBarActivity {
 
             }
         });
+
 
         mBusTwoButton = (Button)findViewById(R.id.view_map);
         mBusTwoButton.setOnClickListener(new View.OnClickListener() {
@@ -45,6 +48,7 @@ public class Customer extends ActionBarActivity {
             }
         });
 
+
         mBusThreeButton = (Button)findViewById(R.id.view_map);
         mBusThreeButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,6 +56,7 @@ public class Customer extends ActionBarActivity {
 
             }
         });
+
 
         mBusFourButton = (Button)findViewById(R.id.view_map);
         mBusFourButton.setOnClickListener(new View.OnClickListener() {
