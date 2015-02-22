@@ -1,28 +1,44 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.example.quinn.foodtruck.Customer"
-    android:background="#ff0a1eff">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
 
-    <TextView android:text="Mobile Food Market Map" android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:textColor="#fef9fdff" />
-
-    <WebView
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/webView"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/textView" />
+        android:padding="24dp"
+        android:textSize="30dp"
+        android:text="@string/truck_option_text"/>
 
-</RelativeLayout>
+    <Button
+        android:id="@+id/view_map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/view_map"/>
+    <Button
+        android:id="@+id/truck_button_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/truck_button_one"/>
+    <Button
+        android:id="@+id/truck_button_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/truck_button_two"/>
+    <Button
+        android:id="@+id/truck_button_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/truck_button_three"/>
+    <Button
+        android:id="@+id/truck_button_four"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/truck_button_four"/>
+    <Button
+        android:id="@+id/truck_button_five"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/truck_button_five"/>
+</LinearLayout>

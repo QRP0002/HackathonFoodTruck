@@ -13,8 +13,8 @@ public class CustomerPage extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.web_view_layout);
-        mWebView = (WebView) findViewById(R.id.web_view_id);
+        //setContentView(R.layout.web_view_layout);
+        //mWebView = (WebView) findViewById(R.id.web_view_id);
         mWebView.loadUrl("www.arcgis.com/apps/PanelsLegend/index.html?appid=26801f4d9b0e456dbbfcbef4568e9fbe");
     }
 

@@ -7,10 +7,7 @@
     <string name="admin_button">Admin</string>
     <string name="truck_button">Truck</string>
     <string name="customer_button">Customer</string>
-    <string name="login_admin">Login</string>
     <string name="login_truck">Login</string>
-    <string name="name_admin"></string>
-    <string name="password_admin"></string>
     <string name="name_truck"></string>
     <string name="password_truck"></string>
     <string name="title_activity_admin_login">AdminLogin</string>
@@ -20,6 +17,12 @@
     <string name="title_activity_truck">Truck</string>
     <string name="incorrect_info">Information Incorrect, try again.</string>
     <string name="title_activity_customer_page">CustomerPage</string>
->>>>>>> origin/master
-
+    <string name="truck_button_one">Truck One</string>
+    <string name="truck_button_two">Truck Two</string>
+    <string name="truck_button_three">Truck Three</string>
+    <string name="truck_button_four">Truck Four</string>
+    <string name="truck_button_five">Truck Five</string>
+    <string name="view_map">View Truck Locations</string>
+    <string name="truck_option_text">Chose an option</string>
+    <string name="add_item">Add Item</string>
 </resources>
