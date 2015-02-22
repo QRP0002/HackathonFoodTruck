@@ -34,7 +34,7 @@ public class AddItem extends ActionBarActivity {
                 String itemName = nameText.getText().toString().toLowerCase();
                 String itemQuantity = quantityText.getText().toString().toLowerCase();
                 String itemPrice = priceText.getText().toString().toLowerCase();
-                File fileName = new File("inventory.txt");
+                File fileName = new File("C:\\Users\\gmbordelon\\Documents\\GitHub\\HackathonFoodTruck\\inventory.txt");
                 try {
                     String newLine = itemName + " " + itemQuantity + "" + itemPrice;
                     FileWriter fileWriter = new FileWriter(fileName.getAbsoluteFile());

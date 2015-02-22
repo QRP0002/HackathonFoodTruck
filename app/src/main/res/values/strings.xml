@@ -29,5 +29,9 @@
     <string name="item_retail"></string>
     <string name="item_done">Item has been added</string>
     <string name="title_activity_map">Map</string>
+    <string name="title_activity_view_truck">ViewTruck</string>
+    <string name="hello"></string>
+
+    <string name="hello_world">Hello world!</string>
 
 </resources>
