@@ -1,0 +1,29 @@
+NAME:                              QUANTITY:       PRICE:
+
+Apples                                      5                $0.50
+Bananas                                   10             $0.25
+Broccoli                                    4                $2.00
+Cauliflower                              4                $1.50
+Celery                                        6               $1.00
+Cornmeal                                  3               $5.00
+Grape Purple                            8               $4.00
+Grape Scuppernong               3               $4.00
+Honey                                        3               $5.00
+Lee Citrus                                 5               $0.50
+Lemons                                    12            $0.25
+Lettuce Head                           1               $2.00
+Lettuce Mix                              6               $0.35
+Minneolas                                 6              $0.50
+Onions Yellow                          6              $0.50
+Orange                                       6              $0.65
+Pears Bosc                               6               $0.65
+Pears Green                              6               $0.50
+Peppers Banana                     10              $0.35
+Peppers Bell                             5               $0.20
+Potatoes Russet                     5               $0.75
+Potatoes Sweet                       6                $0.50
+Satsumas                                10              $0.25
+Tangerines                               10              $0.35
+Tomatoes Green                     6                $0.65
+Tomatoes Red                         6                $0.65
+

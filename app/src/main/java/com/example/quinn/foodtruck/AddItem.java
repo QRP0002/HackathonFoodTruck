@@ -11,10 +11,15 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.io.BufferedOutputStream;
 import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.io.OutputStreamWriter;
 
 
 public class AddItem extends ActionBarActivity {
@@ -30,17 +35,18 @@ public class AddItem extends ActionBarActivity {
             public void onClick(View v) {
                 EditText nameText = (EditText) findViewById(R.id.item_name);
                 EditText quantityText = (EditText) findViewById(R.id.item_amount);
-                EditText priceText = (EditText) findViewById(R.id.item_whole);
+                EditText priceText = (EditText) findViewById(R.id.item_retail);
                 String itemName = nameText.getText().toString().toLowerCase();
                 String itemQuantity = quantityText.getText().toString().toLowerCase();
                 String itemPrice = priceText.getText().toString().toLowerCase();
-                File fileName = new File("C:\\Users\\gmbordelon\\Documents\\GitHub\\HackathonFoodTruck\\inventory.txt");
+                File fileName = new File("inventory1.txt");
                 try {
-                    String newLine = itemName + " " + itemQuantity + "" + itemPrice;
-                    FileWriter fileWriter = new FileWriter(fileName.getAbsoluteFile());
-                    BufferedWriter buffWriter = new BufferedWriter(fileWriter);
-                    buffWriter.write(newLine);
-                    buffWriter.close();
+                    final OutputStream os = new BufferedOutputStream(new FileOutputStream("inventory1.txt"), 1024);
+                    String newLine = itemName + " " + itemQuantity + "" + itemPrice + "\n";
+
+
+                    os.flush();
+                    os.close();
                 }
                 catch (IOException e) {
                     e.printStackTrace();

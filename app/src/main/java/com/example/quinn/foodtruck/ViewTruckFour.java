@@ -8,19 +8,20 @@ import android.widget.TextView;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.*;
+import java.util.Scanner;
 
-public class ViewTruck extends ActionBarActivity {
+
+public class ViewTruckFour extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_view_truck);
+        setContentView(R.layout.activity_view_truck_four);
 
         try {
             String tempStr= "";
             TextView tv = (TextView) findViewById(R.id.hello);
-            final InputStream is = getResources().getAssets().open("inventory1.txt");
+            final InputStream is = getResources().getAssets().open("inventory4.txt");
             Scanner scan = new Scanner(is);
             while (scan.hasNext()) {
                 tempStr = tempStr + "\n" + scan.nextLine();
@@ -32,10 +33,11 @@ public class ViewTruck extends ActionBarActivity {
         }
     }
 
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_view_truck, menu);
+        getMenuInflater().inflate(R.menu.menu_view_truck_four, menu);
         return true;
     }
 

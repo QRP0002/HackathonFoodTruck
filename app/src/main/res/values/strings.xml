@@ -33,5 +33,8 @@
     <string name="hello"></string>
 
     <string name="hello_world">Hello world!</string>
+    <string name="title_activity_view_truck_two">ViewTruckTwo</string>
+    <string name="title_activity_view_truck_three">ViewTruckThree</string>
+    <string name="title_activity_view_truck_four">ViewTruckFour</string>
 
 </resources>

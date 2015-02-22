@@ -37,6 +37,30 @@ public class Customer extends ActionBarActivity {
                 startActivity(intent);
             }
         });
+        mBusTwoButton = (Button)findViewById(R.id.truck_button_two);
+        mBusTwoButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Customer.this, ViewTruck.class);
+                startActivity(intent);
+            }
+        });
+        mBusThreeButton = (Button)findViewById(R.id.truck_button_three);
+        mBusThreeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Customer.this, ViewTruck.class);
+                startActivity(intent);
+            }
+        });
+        mBusFourButton = (Button)findViewById(R.id.truck_button_four);
+        mBusFourButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Customer.this, ViewTruck.class);
+                startActivity(intent);
+            }
+        });
     }
 
 

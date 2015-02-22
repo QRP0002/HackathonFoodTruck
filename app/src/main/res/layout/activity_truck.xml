@@ -2,7 +2,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    android:background="@drawable/communitygarden">
 
     <TextView
         android:id="@+id/add_text"
@@ -10,7 +11,8 @@
         android:layout_height="wrap_content"
         android:padding="24dp"
         android:textSize="30dp"
-        android:text="@string/add_text"/>
+        android:text="@string/add_text"
+        android:textColor="#ffffffff" />
 
     <Button
         android:id="@+id/add_item"

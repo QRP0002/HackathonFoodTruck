@@ -66,6 +66,30 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.quinn.foodtruck.Customer" />
         </activity>
+        <activity
+            android:name=".ViewTruckTwo"
+            android:label="@string/title_activity_view_truck_two"
+            android:parentActivityName=".Customer" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.quinn.foodtruck.Customer" />
+        </activity>
+        <activity
+            android:name=".ViewTruckThree"
+            android:label="@string/title_activity_view_truck_three"
+            android:parentActivityName=".Customer" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.quinn.foodtruck.Customer" />
+        </activity>
+        <activity
+            android:name=".ViewTruckFour"
+            android:label="@string/title_activity_view_truck_four"
+            android:parentActivityName=".Customer" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.quinn.foodtruck.Customer" />
+        </activity>
     </application>
 
 </manifest>

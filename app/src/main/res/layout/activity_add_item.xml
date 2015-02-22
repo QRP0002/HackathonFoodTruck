@@ -2,7 +2,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    android:background="@color/material_blue_grey_800">
 
     <EditText
         android:id="@+id/item_name"
@@ -13,7 +14,9 @@
         android:textSize="24dp"
         android:text=""
         android:inputType="text"
-        android:imeOptions="actionSend"/>
+        android:imeOptions="actionSend"
+        android:textColorHint="#FFFFFF"
+        android:textColor="#ffffffff" />
 
     <EditText
         android:id="@+id/item_amount"
@@ -24,7 +27,9 @@
         android:textSize="24dp"
         android:text="@string/name_truck"
         android:inputType="text"
-        android:imeOptions="actionSend"/>
+        android:imeOptions="actionSend"
+        android:textColorHint="#FFFFFF"
+        android:textColor="#ffffffff" />
 
     <EditText
         android:id="@+id/item_retail"
@@ -35,7 +40,9 @@
         android:textSize="24dp"
         android:text="@string/name_truck"
         android:inputType="text"
-        android:imeOptions="actionSend"/>
+        android:textColorHint="#FFFFFF"
+        android:imeOptions="actionSend"
+        android:textColor="#ffffffff" />
 
     <Button
         android:id="@+id/add_item"

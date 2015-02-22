@@ -2,7 +2,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    android:background="@color/material_blue_grey_800">
 
     <EditText
         android:id="@+id/name_truck"
@@ -11,7 +12,9 @@
         android:layout_height="wrap_content"
         android:padding="10dp"
         android:textSize="24dp"
-        android:text="@string/name_truck"/>
+        android:text="@string/name_truck"
+        android:textColorHint="#FFFFFF"
+        android:textColor="#ffffffff" />
     <EditText
         android:id="@+id/password_truck"
         android:hint="Password"
@@ -20,7 +23,9 @@
         android:layout_height="wrap_content"
         android:padding="10dp"
         android:textSize="24dp"
-        android:text="@string/password_truck"/>
+        android:textColorHint="#FFFFFF"
+        android:text="@string/password_truck"
+        android:textColor="#ffffffff" />
     <Button
         android:id="@+id/login_button"
         android:layout_width="wrap_content"

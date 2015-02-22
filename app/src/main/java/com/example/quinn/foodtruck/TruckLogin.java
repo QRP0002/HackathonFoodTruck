@@ -64,8 +64,8 @@ public class TruckLogin extends ActionBarActivity {
     }
 
     public boolean loginTest (String userNameIn, String passIn) {
-        String user = "1";
-        String pass = "1";
+        String user = "admin";
+        String pass = "password";
         boolean userFlag = false;
         boolean passFlag = false;
 
