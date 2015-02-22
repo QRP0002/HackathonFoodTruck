@@ -17,5 +17,6 @@
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_truck_login">TruckLogin</string>
     <string name="title_activity_customer">Customer</string>
+    <string name="title_activity_customer_page">CustomerPage</string>
 
 </resources>

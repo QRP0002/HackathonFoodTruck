@@ -40,6 +40,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.quinn.foodtruck.MainActivity" />
         </activity>
+        <activity
+            android:name=".CustomerPage"
+            android:label="@string/title_activity_customer_page"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.quinn.foodtruck.MainActivity" />
+        </activity>
     </application>
 
 </manifest>
