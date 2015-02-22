@@ -8,6 +8,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
+
+import java.util.zip.Adler32;
 
 /**
  * Created by Quinn on 2/21/2015.
@@ -32,6 +35,10 @@ public class AdminLogin extends ActionBarActivity{
                 boolean flag = loginTest(userName, password);
                 if (flag == true) {
                     startActivity(intent);
+                } else {
+                    Toast.makeText(AdminLogin.this,
+                            R.string.incorrect_info,
+                            Toast.LENGTH_SHORT).show();
                 }
             }
         });

@@ -40,6 +40,26 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.quinn.foodtruck.MainActivity" />
         </activity>
+        <activity
+            android:name=".Admin"
+            android:label="@string/title_activity_admin"
+            android:parentActivityName=".AdminLogin" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.quinn.foodtruck.AdminLogin" />
+        </activity>
+        <activity
+            android:name=".Trucker"
+            android:label="@string/title_activity_trucker" >
+        </activity>
+        <activity
+            android:name=".Truck"
+            android:label="@string/title_activity_truck"
+            android:parentActivityName=".TruckLogin" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.quinn.foodtruck.TruckLogin" />
+        </activity>
     </application>
 
 </manifest>

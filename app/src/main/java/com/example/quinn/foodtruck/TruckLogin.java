@@ -1,17 +1,43 @@
 package com.example.quinn.foodtruck;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
 
 
 public class TruckLogin extends ActionBarActivity {
+    private Button mLoginButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_truck_login);
+
+        mLoginButton = (Button)findViewById(R.id.login_button);
+        mLoginButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(TruckLogin.this, Truck.class);
+                EditText editText = (EditText) findViewById(R.id.name_truck);
+                EditText editText1 = (EditText) findViewById(R.id.password_truck);
+                String userName = editText.getText().toString().toLowerCase();
+                String password = editText1.getText().toString().toLowerCase();
+                boolean flag = loginTest(userName, password);
+                if (flag == true) {
+                    startActivity(intent);
+                } else {
+                    Toast.makeText(TruckLogin.this,
+                            R.string.incorrect_info,
+                            Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
     }
 
 
@@ -35,5 +61,25 @@ public class TruckLogin extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public boolean loginTest (String userNameIn, String passIn) {
+        String user = "1";
+        String pass = "1";
+        boolean userFlag = false;
+        boolean passFlag = false;
+
+        if (user.equals(userNameIn)) {
+            userFlag = true;
+        }
+
+        if (pass.equals(passIn)) {
+            passFlag = true;
+        }
+
+        if (passFlag == true && userFlag == true) {
+            return true;
+        }
+        return false;
     }
 }
