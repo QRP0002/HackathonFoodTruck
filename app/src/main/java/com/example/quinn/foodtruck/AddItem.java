@@ -7,22 +7,23 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 
-public class Truck extends ActionBarActivity {
-    private Button mAddButton;
+public class AddItem extends ActionBarActivity {
+    private Button mAddItemButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_truck);
-
-        mAddButton = (Button)findViewById(R.id.add_item);
-        mAddButton.setOnClickListener(new View.OnClickListener(){
+        setContentView(R.layout.activity_add_item);
+        mAddItemButton = (Button)findViewById(R.id.add_item);
+        mAddItemButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Truck.this, AddItem.class);
-                startActivity(intent);
+                Toast.makeText(AddItem.this,
+                        R.string.item_done,
+                        Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -31,7 +32,7 @@ public class Truck extends ActionBarActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_truck, menu);
+        getMenuInflater().inflate(R.menu.menu_add_item, menu);
         return true;
     }
 

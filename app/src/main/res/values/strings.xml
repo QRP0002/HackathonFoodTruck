@@ -2,27 +2,31 @@
 <resources>
 
     <string name="action_settings">action_settings</string>
-    <string name="app_name">FoodTruck</string>
-    <string name="option_text">Pick your option</string>
-    <string name="admin_button">Admin</string>
-    <string name="truck_button">Truck</string>
+    <string name="app_name">Birmingham Mobile Groceries</string>
+    <string name="option_text">Choose your option</string>
+    <string name="truck_button">Bus Owner Login</string>
     <string name="customer_button">Customer</string>
     <string name="login_truck">Login</string>
     <string name="name_truck"></string>
     <string name="password_truck"></string>
-    <string name="title_activity_admin_login">AdminLogin</string>
-    <string name="hello_world">Hello world!</string>
-    <string name="title_activity_truck_login">TruckLogin</string>
-    <string name="title_activity_customer">Customer</string>
-    <string name="title_activity_truck">Truck</string>
+    <string name="title_activity_truck_login">Bus Owner Login</string>
+    <string name="title_activity_customer">Bus Information</string>
+    <string name="title_activity_truck">Bus Owner</string>
     <string name="incorrect_info">Information Incorrect, try again.</string>
     <string name="title_activity_customer_page">CustomerPage</string>
-    <string name="truck_button_one">Truck One</string>
-    <string name="truck_button_two">Truck Two</string>
-    <string name="truck_button_three">Truck Three</string>
-    <string name="truck_button_four">Truck Four</string>
-    <string name="truck_button_five">Truck Five</string>
-    <string name="view_map">View Truck Locations</string>
+    <string name="truck_button_one">Bus One</string>
+    <string name="truck_button_two">Bus Two</string>
+    <string name="truck_button_three">Bus Three</string>
+    <string name="truck_button_four">Bus Four</string>
+    <string name="view_map">View Bus Locations</string>
     <string name="truck_option_text">Chose an option</string>
+    <string name="add_text">Change Item Stock</string>
     <string name="add_item">Add Item</string>
+    <string name="title_activity_add_item">Adding Item</string>
+    <string name="item_name"></string>
+    <string name="item_whole"></string>
+    <string name="item_amount"></string>
+    <string name="item_retail"></string>
+    <string name="item_done">Item has been added</string>
+
 </resources>

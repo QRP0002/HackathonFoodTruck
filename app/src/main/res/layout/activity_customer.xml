@@ -36,9 +36,4 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/truck_button_four"/>
-    <Button
-        android:id="@+id/truck_button_five"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/truck_button_five"/>
 </LinearLayout>

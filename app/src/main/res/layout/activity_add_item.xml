@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/item_name"
+        android:hint="Enter Item Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="24dp"
+        android:text="@string/name_truck"/>
+    <EditText
+        android:id="@+id/item_amount"
+        android:hint="Enter Item Quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="24dp"
+        android:text="@string/name_truck"/>
+    <EditText
+        android:id="@+id/item_whole"
+        android:hint="Enter Item Whole Sale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="24dp"
+        android:text="@string/name_truck"/>
+    <EditText
+        android:id="@+id/item_retail"
+        android:hint="Enter Item Retail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="24dp"
+        android:text="@string/name_truck"/>
+
+    <Button
+        android:id="@+id/add_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_item"/>
+</LinearLayout>

@@ -39,25 +39,12 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.quinn.foodtruck.TruckLogin" />
-            android:name=".CustomerPage"
-            android:label="@string/title_activity_customer_page"
-            android:parentActivityName=".MainActivity" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.quinn.foodtruck.TruckLogin" />
-        </activity>
-        <activity
-            android:name=".Add"
-            android:label="@string/title_activity_add"
-            android:parentActivityName=".Truck" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.quinn.foodtruck.Truck" />
+
         </activity>
         <activity
             android:name=".AddItem"
             android:label="@string/title_activity_add_item"
-            android:parentActivityName=".Truck" >
+            android:parentActivityName=".TruckLogin" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.quinn.foodtruck.Truck" />
