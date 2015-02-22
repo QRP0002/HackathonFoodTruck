@@ -11,7 +11,10 @@
         android:layout_height="wrap_content"
         android:padding="10dp"
         android:textSize="24dp"
-        android:text="@string/name_truck"/>
+        android:text=""
+        android:inputType="text"
+        android:imeOptions="actionSend"/>
+
     <EditText
         android:id="@+id/item_amount"
         android:hint="Enter Item Quantity"
@@ -19,7 +22,9 @@
         android:layout_height="wrap_content"
         android:padding="10dp"
         android:textSize="24dp"
-        android:text="@string/name_truck"/>
+        android:text="@string/name_truck"
+        android:inputType="text"
+        android:imeOptions="actionSend"/>
     <EditText
         android:id="@+id/item_whole"
         android:hint="Enter Item Whole Sale"
@@ -27,7 +32,9 @@
         android:layout_height="wrap_content"
         android:padding="10dp"
         android:textSize="24dp"
-        android:text="@string/name_truck"/>
+        android:text="@string/name_truck"
+        android:inputType="text"
+        android:imeOptions="actionSend"/>
     <EditText
         android:id="@+id/item_retail"
         android:hint="Enter Item Retail"
@@ -35,11 +42,15 @@
         android:layout_height="wrap_content"
         android:padding="10dp"
         android:textSize="24dp"
-        android:text="@string/name_truck"/>
+        android:text="@string/name_truck"
+        android:inputType="text"
+        android:imeOptions="actionSend"/>
 
     <Button
         android:id="@+id/add_item"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/add_item"/>
+        android:text="@string/add_item"
+        android:inputType="text"
+        android:imeOptions="actionSend"/>
 </LinearLayout>

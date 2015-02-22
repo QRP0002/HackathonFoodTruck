@@ -21,6 +21,7 @@ public class Manager {
     {
         String name, phoneNum, userName, userPassword;
         double Xlocation, Ylocation;
+
         System.out.println("Enter the truck's name: ");
         name = userInput.next();
         System.out.println("Enter the truck's phone number: ");
