@@ -7,7 +7,14 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
+
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 
 
 public class AddItem extends ActionBarActivity {
@@ -21,6 +28,23 @@ public class AddItem extends ActionBarActivity {
         mAddItemButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
+                EditText nameText = (EditText) findViewById(R.id.item_name);
+                EditText quantityText = (EditText) findViewById(R.id.item_amount);
+                EditText priceText = (EditText) findViewById(R.id.item_whole);
+                String itemName = nameText.getText().toString().toLowerCase();
+                String itemQuantity = quantityText.getText().toString().toLowerCase();
+                String itemPrice = priceText.getText().toString().toLowerCase();
+                File fileName = new File("inventory.txt");
+                try {
+                    String newLine = itemName + " " + itemQuantity + "" + itemPrice;
+                    FileWriter fileWriter = new FileWriter(fileName.getAbsoluteFile());
+                    BufferedWriter buffWriter = new BufferedWriter(fileWriter);
+                    buffWriter.write(newLine);
+                    buffWriter.close();
+                }
+                catch (IOException e) {
+                    e.printStackTrace();
+                }
                 Toast.makeText(AddItem.this,
                         R.string.item_done,
                         Toast.LENGTH_SHORT).show();
@@ -50,4 +74,9 @@ public class AddItem extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+
+
+
+
 }
