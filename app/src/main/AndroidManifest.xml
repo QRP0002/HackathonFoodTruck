@@ -44,8 +44,7 @@
             android:parentActivityName=".MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.quinn.foodtruck.MainActivity" />
->>>>>>> origin/master
+                android:value="com.example.quinn.foodtruck.TruckLogin" />
         </activity>
     </application>
 

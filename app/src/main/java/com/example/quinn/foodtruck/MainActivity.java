@@ -11,7 +11,6 @@ import android.widget.Button;
 
 
 public class MainActivity extends ActionBarActivity {
-    private Button mAdminButton;
     private Button mTruckButton;
     private Button mCustomerButton;
     @Override
@@ -19,14 +18,6 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mAdminButton = (Button)findViewById(R.id.admin_button);
-        mAdminButton.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, AdminLogin.class);
-                startActivity(intent);
-            }
-        });
         mTruckButton = (Button)findViewById(R.id.truck_button);
         mTruckButton.setOnClickListener(new View.OnClickListener(){
             @Override
