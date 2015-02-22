@@ -14,10 +14,10 @@
     <string name="title_activity_truck">Bus Owner</string>
     <string name="incorrect_info">Information Incorrect, try again.</string>
     <string name="title_activity_customer_page">CustomerPage</string>
-    <string name="truck_button_one">Bus One</string>
-    <string name="truck_button_two">Bus Two</string>
-    <string name="truck_button_three">Bus Three</string>
-    <string name="truck_button_four">Bus Four</string>
+    <string name="truck_button_one">0034</string>
+    <string name="truck_button_two">0045</string>
+    <string name="truck_button_three">0150</string>
+    <string name="truck_button_four">0143</string>
     <string name="view_map">View Bus Locations</string>
     <string name="truck_option_text">Chose an option</string>
     <string name="add_text">Change Item Stock</string>
@@ -28,5 +28,6 @@
     <string name="item_amount"></string>
     <string name="item_retail"></string>
     <string name="item_done">Item has been added</string>
+    <string name="title_activity_map">Map</string>
 
 </resources>

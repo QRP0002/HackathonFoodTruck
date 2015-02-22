@@ -25,8 +25,8 @@ public class Truck extends ActionBarActivity {
                 startActivity(intent);
             }
         });
-    }
 
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
