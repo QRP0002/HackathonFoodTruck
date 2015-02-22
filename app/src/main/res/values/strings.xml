@@ -17,9 +17,9 @@
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_truck_login">TruckLogin</string>
     <string name="title_activity_customer">Customer</string>
-    <string name="title_activity_admin">Admin</string>
-    <string name="title_activity_trucker">Trucker</string>
     <string name="title_activity_truck">Truck</string>
     <string name="incorrect_info">Information Incorrect, try again.</string>
+    <string name="title_activity_customer_page">CustomerPage</string>
+>>>>>>> origin/master
 
 </resources>
