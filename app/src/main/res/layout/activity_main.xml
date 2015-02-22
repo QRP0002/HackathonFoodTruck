@@ -16,7 +16,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/truck_button"
-        android:onClick="truckLogin"/>
+        android:onClick="truckLogin"
+        android:background="#ff93ff86" />
     <Button
         android:id="@+id/customer_button"
         android:layout_width="wrap_content"

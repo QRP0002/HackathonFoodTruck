@@ -30,7 +30,7 @@ public class AddItem extends ActionBarActivity {
             public void onClick(View v) {
                 EditText nameText = (EditText) findViewById(R.id.item_name);
                 EditText quantityText = (EditText) findViewById(R.id.item_amount);
-                EditText priceText = (EditText) findViewById(R.id.item_whole);
+                EditText priceText = (EditText) findViewById(R.id.item_retail);
                 String itemName = nameText.getText().toString().toLowerCase();
                 String itemQuantity = quantityText.getText().toString().toLowerCase();
                 String itemPrice = priceText.getText().toString().toLowerCase();
